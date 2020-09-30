@@ -1,5 +1,5 @@
 # Sparse RGB-D Visual Odometry #
-Fast and lightweight sparse RGB-D visual odometry system based on [LVT](https://github.com/SAR-Research-Lab/lvt) method. The tracking aligns detected ORB keypoints to a limited sparse local map of features so as to reduce drift with regard to framre-to-frame approaches. [GMS](https://github.com/JiawangBian/GMS-Feature-Matcher) is used for robust feature matching.
+Fast and lightweight sparse RGB-D visual odometry system based on [LVT](https://github.com/SAR-Research-Lab/lvt) method. The tracking aligns detected ORB keypoints to a limited sparse local map of features so as to reduce drift with regard to frame-to-frame approaches. [GMS](https://github.com/JiawangBian/GMS-Feature-Matcher) is used for robust feature matching.
 
 ![Visu](visu/visu.png)
 
