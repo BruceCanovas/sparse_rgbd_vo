@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<launch>
+    
+    <node if="true" pkg="sparse_rgbd_vo" type="sparse_rgbd_vo_node" name="sparse_rgbd_vo_node" output="screen" clear_params="true" required="true">
+        <remap from="/camera_info" to="/camera/color/camera_info"/>
+        <remap from="/image_color" to="/camera/color/image_raw"/>
+        <remap from="/image_depth" to="/camera/aligned_depth_to_color/image_raw"/>
+      
+        <param name="range_min" value="0.2"/>
+        <param name="range_max" value="5.0"/>
+        <param name="untracked_threshold" value="10"/>
+        <param name="nb_features" value="500"/>
+        <param name="features_scale_factor" value="1.2"/>
+        <param name="features_nb_levels" value="8"/>
+        <param name="ini_th_fast" value="15"/>
+        <param name="min_th_fast" value="5"/>
+      
+        <param name="map_frame_id" value="map"/>
+    
+	<param name="depth_scale" value="0.001"/>
+    </node>
+    
+    <!--<node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find sparse_rgbd_vo)/config/conf.rviz"/>-->
+  
+</launch>
