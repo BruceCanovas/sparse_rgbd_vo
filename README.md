@@ -30,6 +30,8 @@ We use Grid-based Motion Statistics for robust feature correspondence.
 ### [Lightweight Visual Tracking (LVT)](https://github.com/SAR-Research-Lab/lvt) ###
 We based the design of our feature-based visual odometry on their method and our Perspective-n-Point solver has been implemented following their code.
 
+### [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) ###
+
 ## Building ##
 
 The system is provided as a ROS package which can be copied or cloned into your workspace and built directly using catkin.
