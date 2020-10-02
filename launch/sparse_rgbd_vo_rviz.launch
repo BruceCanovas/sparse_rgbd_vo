@@ -21,6 +21,6 @@
 	<param name="depth_scale" value="0.001"/>
     </node>
     
-    <!--<node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find sparse_rgbd_vo)/config/conf.rviz"/>-->
+    <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find sparse_rgbd_vo)/config/conf.rviz"/>
   
 </launch>
